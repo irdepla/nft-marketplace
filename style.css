@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container{
+    margin: 0 auto;    
+}
+
+section{
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+
+li{
+    color: white;
+}
+
+.main-color{
+    @apply text-[#D6EF0E];
+}
+
+
+.text-color{
+    @apply text-[#FFFFFD];
+}
+ 
+
+.universal__btn{
+    @apply 
+    bg-[#D6EF0E] text-white px-10 py-[15px] rounded-lg text-base font-bold;
+}
+
+
+    .features__card__title{
+        span{
+            display: flex;
+            align-items: center;
+        }
+        span::before{
+            content: url(./images/eth-logo.svg);
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+
+
+.features__card__info{
+    div:last-child{
+
+        margin-top: 18px;
+        p{
+
+            span{
+                display: flex;
+                gap: 12px;
+                margin-top: 4px;
+            }
+            span::before{
+                content: url(./images/clock-logo.svg);
+            }
+        }
+    }
+}

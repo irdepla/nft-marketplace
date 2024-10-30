@@ -4,10 +4,232 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Tailwind CSS</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-
-    
+  <body class="bg-[#090F1D]">
+    <header>
+      <nav class="nav py-7">
+        <div class="container">
+          <div class="nav__wrapper flex justify-between items-center ">
+            <ul class="flex gap-10">
+              <li>
+                <a href="#">
+                  <span> Marketplace </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span> Artists </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span> Community </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span> Collections </span>
+                </a>
+              </li>
+            </ul>
+            <button class="universal__btn">Contact</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div
+            class="hero__wrapper flex justify-between items-center gap-[171px]"
+          >
+            <div class="hero__info flex flex-col">
+              <h1 class="text-[64px] text-[#FFFFFD] font-medium">
+                Discover and <br />
+                Collect The Best <br />
+                NFTs <span class="main-color">Digital Art.</span>
+              </h1>
+              <span class="text-[#FFFFFD] mt-5">
+                Get started with the easiest and most secure platform to buy and
+                trade <br />
+                digital ART and NFT’s. Start exploring the world of digital art
+                and NFTs <br />
+                today and take control of your digital assets with confidence!
+              </span>
+              <div class="hero__links flex gap-9 mt-10 items-center justify-start">
+                <button class="universal__btn">
+                  Explore Now
+                </button>
+                  <a href="#">
+                    <span class="text-color">
+                      Learn More
+                    </span>
+                  </a>
+              </div>
+              <div class="hero__statistics__cards mt-[72px] grid gap-[94px] items-center grid-cols-3">
+                <div class="border-r-[1px] border-[#D6EF0E] border-solid w-32 flex flex-col ">
+                  <p class="main-color text-5xl">8.9 
+                    <span class="text-color">K</span>
+                  </p>
+                  <span class="mt-4 text-color ">Art work</span>
+                </div>
+                <div class="border-r-[1px] border-[#D6EF0E] border-solid w-32 flex flex-col ">
+                  <p class="main-color text-5xl">65 
+                    <span class="text-color">K</span>
+                  </p>
+                  <span class="mt-4 text-color ">Artist</span>
+                </div>
+                <div class="flex flex-col ">
+                  <p class="main-color text-5xl">87 
+                    <span class="text-color">K</span>
+                  </p>
+                  <span class="mt-4 text-color ">Collection</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__img relative">
+              <img src="./images/hero-img.svg" alt="" />
+              <img src="./images/hero-art.svg" alt="hero-art" class="absolute top-[250px] left-[-60px]">
+              <img src="./images/hero-star.svg" alt="hero-star" class="absolute top-[320px] left-[10px]">
+              <div class="w-[304px]  hero-img__cards bg-[#131E3A] absolute p-5 rounded-2xl h-[169px] mt-16 flex flex-col gap-6 right-[-50px] top-[400px] border-t border-solid border-[#D6EF0E]">
+                <div class="hero__img__card flex justify-between items-center">
+                  <div>
+                    <p class="main-color">Ends in</p>
+                    <span class="font-bold text-color">05:45:47</span>
+                  </div>
+                  <div>
+                    <p class="main-color">Current bid</p>
+                    <span class="font-bold text-color">0.24ETH</span>
+                  </div>
+                </div>
+                <button class="py-4 px-[88px] bg-transparent border-[#D6EF0E] border-[1px] border-solid rounded-lg text-[#D6EF0E]">Place A Bid</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper flex flex-col gap-16">
+            <div class="features__info flex justify-between items-end">
+              <h2 class="text-5xl font-medium text-color">
+                <span class="text-[#D6EF0E]">Amazing</span> and Super <br> Unique Art of This <span class="text-[#D6EF0E]">Week</span>
+              </h2>
+              <button class="universal__btn">
+                See All
+              </button>
+            </div>
+            <div class="features__cards grid grid-cols-3 items-center gap-[30px]">
+              <div class="features__card flex flex-col p-5 w-[410px] bg-[#131E3A] rounded-[28px] border-t border-[#D6EF0E]">
+                <img src="./images/features-card1.svg" alt="">
+                <div class="features__card__info flex mt-5 flex-col">
+                  <div class="flex justify-between items-center features__card__title">
+                    <h4 class="text-2xl text-color font-bold">
+                      Cyberpunk Cocomo
+                    </h4>
+                    <span class="text-color font-bold">490ETH</span>
+                  </div>
+                  <div class="flex justify-between items-center ">
+                    <p class="text-[#838382]">Ending In <br>
+                      <span class="text-color font-bold">03:24:56</span>
+                    </p>
+                    <button class="py-4 px-[40px] bg-transparent border-[#D6EF0E] border-[1px] border-solid rounded-lg text-[#D6EF0E]">Place A Bid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="features__card flex flex-col p-5 w-[410px] bg-[#131E3A] rounded-[28px] border-t border-[#D6EF0E]">
+                <img src="./images/features-card2.svg" alt="">
+                <div class="features__card__info flex mt-5 flex-col">
+                  <div class="flex justify-between items-center features__card__title">
+                    <h4 class="text-2xl text-color font-bold">
+                      Charge, Qi tiao yu
+                    </h4>
+                    <span class="text-color font-bold">490ETH</span>
+                  </div>
+                  <div class="flex justify-between items-center ">
+                    <p class="text-[#838382]">Ending In <br>
+                      <span class="text-color font-bold">03:24:56</span>
+                    </p>
+                    <button class="py-4 px-[40px] bg-transparent border-[#D6EF0E] border-[1px] border-solid rounded-lg text-[#D6EF0E]">Place A Bid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="features__card flex flex-col p-5 w-[410px] bg-[#131E3A] rounded-[28px] border-t border-[#D6EF0E]">
+                <img src="./images/features-card3.svg" alt="">
+                <div class="features__card__info flex mt-5 flex-col">
+                  <div class="flex justify-between items-center features__card__title">
+                    <h4 class="text-2xl text-color font-bold">
+                      Surgeon, Josh Rife
+                    </h4>
+                    <span class="text-color font-bold">490ETH</span>
+                  </div>
+                  <div class="flex justify-between items-center ">
+                    <p class="text-[#838382]">Ending In <br>
+                      <span class="text-color font-bold">03:24:56</span>
+                    </p>
+                    <button class="py-4 px-[40px] bg-transparent border-[#D6EF0E] border-[1px] border-solid rounded-lg text-[#D6EF0E]">Place A Bid</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nft">
+        <div class="container">
+          <div class="nft__wrapper flex justify-between items-center">
+            <div class="nft__info flex flex-col gap-5">
+              <h2 class="font-medium text-5xl text-color">
+                Create And Sell <br> Your <span class="main-color">Best NFTs</span>
+              </h2>
+              <p class="text-color">
+                Start exploring the world of digital art and NFTs today <br> and take control of your digital assets with confidence!
+              </p>
+              <div class="hero__links flex gap-9 mt-5 items-center justify-start">
+                <button class="universal__btn">
+                  Create Now
+                </button>
+                  <a href="#">
+                    <span class="text-color">
+                      Learn More
+                    </span>
+                  </a>
+              </div>
+            </div>
+            <div class="nft__img relative">
+              <img src="./images/nft-img1.svg" alt="" class="mb-9">
+              <img src="./images/nft-img2.svg" alt="" class="absolute top-[150px] right-[350px]">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="artists">
+        <div class="container">
+          <div class="artists__wrapper flex flex-col gap-16">
+            <div class="artists__info flex justify-between items-center">
+              <h2 class="text-5xl font-medium text-color">
+                Popular <span class="text-[#D6EF0E]">Artists <br></span>
+                On This Week 
+              </h2>
+              <button class="universal__btn">
+                See All
+              </button>
+            </div>            
+          </div>
+        </div>
+      </section> -->
+      <section class="subscription">
+        <div class="container">
+          <div class="subscription__wrapper flex justify-between">
+            <div class="subscription__img relative">
+              <img src="./images/subscription-img1.svg" alt="">
+              <img src="./images/subscription-img2.svg" alt="" class="absolute top-[100px] left-[340px]">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
