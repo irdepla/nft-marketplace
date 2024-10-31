@@ -204,9 +204,9 @@
           </div>
         </div>
       </section>
-      <!-- <section class="artists">
+      <section class="artists">
         <div class="container">
-          <div class="artists__wrapper flex flex-col gap-16">
+          <div class="artists__wrapper flex flex-col gap-[30px]">
             <div class="artists__info flex justify-between items-center">
               <h2 class="text-5xl font-medium text-color">
                 Popular <span class="text-[#D6EF0E]">Artists <br></span>
@@ -215,21 +215,217 @@
               <button class="universal__btn">
                 See All
               </button>
-            </div>            
+            </div>
+            <div class="flex justify-between artists__cards">
+              <div class="artists__cards flex flex-wrap gap-[30px]">
+                <div class="artists__card w-[300px] flex flex-col relative">
+                  <img src="./images/artists-card1.svg" alt="">
+                  <div class="flex gap-3 absolute bottom-6 left-6 items-center">
+                    <img src="./images/artist-card1-img.svg" alt="" class="">
+                    <p class="text-sm text-color">Owner<br>
+                      <span class="font-bold text-base">Osvaldo Percy</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="artists__card w-[520px] flex flex-col relative">
+                  <img src="./images/artists-card2.svg" alt="">
+                  <div class="flex gap-3 absolute bottom-6 left-6 items-center">
+                    <img src="./images/artist-card1-img.svg" alt="" class="">
+                    <p class="text-sm text-color">Owner<br>
+                      <span class="font-bold text-base">Osvaldo Percy</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="artists__card w-[410px] flex flex-col relative">
+                  <img src="./images/artists-card4.svg" alt="">
+                  <div class="flex gap-3 absolute bottom-6 left-6 items-center">
+                    <img src="./images/artist-card1-img.svg" alt="" class="">
+                    <p class="text-sm text-color">Owner<br>
+                      <span class="font-bold text-base">Osvaldo Percy</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="artists__card w-[410px] flex flex-col relative">
+                  <img src="./images/artists-card5.svg" alt="">
+                  <div class="flex gap-3 absolute bottom-6 left-6 items-center">
+                    <img src="./images/artist-card1-img.svg" alt="" class="">
+                    <p class="text-sm text-color">Owner<br>
+                      <span class="font-bold text-base">Osvaldo Percy</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="artists__card w-[410px] border flex flex-col relative">
+                <img src="./images/artists-card3.svg" alt="" class="border  border-red-900 bg-cover">
+                <div class="flex absolute bottom-6 left-6 items-center">
+                  <img src="./images/artist-card1-img.svg" alt="" class="">
+                  <p class="text-sm text-color">Owner<br>
+                    <span class="font-bold text-base">Osvaldo Percy</span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="subscription">
         <div class="container">
-          <div class="subscription__wrapper flex justify-between">
-            <div class="subscription__img relative">
+          <div class="subscription__wrapper flex justify-between items-center">
+            <div class="subscription__img relative ">
               <img src="./images/subscription-img1.svg" alt="">
-              <img src="./images/subscription-img2.svg" alt="" class="absolute top-[100px] left-[340px]">
+              <img src="./images/subscription-img2.svg" alt="" class="absolute top-[110px] left-[340px]">
+            </div>
+            <div class="subscription__info flex flex-col  gap-5">
+              <h2 class="font-medium text-5xl text-color">
+                Subscribe And <span class="main-color">get our <br> Updates</span>
+                Every Week
+              </h2>
+              <p class="text-color">
+                We have a blog related to NFT so we can share thoughts and <br> routines on our blog which is updated weekly
+              </p>
+              <div class="flex items-center w-full max-w-md bg-[#1c2e4a] rounded-lg p-2">
+                <input
+                  type="email"
+                  placeholder="Enter your e-mail"
+                  class="flex-1 p-2 bg-transparent text-white outline-none"
+                />
+                <button class="px-4 universal__btn py-2 bg-[#ccff33] rounded-lg text-black font-bold">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper flex justify-between">
+          <div class="footer__info flex flex-col gap-6">
+            <p class="text-color">
+              Discover NFTs by category, track <br> the latest drop, and and follow the <br> collections you love. Enjoy it!
+            </p>
+            <div class="footer__social-media flex gap-3 items-center">
+              <div class="w-6 rounded-md bg-white footer__social-media-card">
+                <img src="./images/facebook.svg" alt="telegram-logo" class="px-[8px] py-[4.5px] ">
+              </div>
+              <div class="w-6 rounded-md bg-white footer__social-media-card ">
+                <img src="./images/telegram-logo.svg" alt="telegram-logo" class="px-[4.5px] py-[4.5px] ">
+              </div>
+              <div class="w-6 rounded-md bg-white footer__social-media-card ">
+                <img src="./images/twitter.svg" alt="telegram-logo" class="px-[4.5px] py-[4.5px] ">
+              </div>
+              <div class="w-6 rounded-md bg-white footer__social-media-card ">
+                <img src="./images/linkedin-logo.svg" alt="telegram-logo" class="px-[4.5px] py-[4.5px] ">
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-[94px]">
+            <ul class="footer__list flex flex-col gap-2">
+              <span class="font-bold text-xl text-color">Explore</span>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Art Sign In</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Collectibles</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Domain Name</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Utility</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list flex flex-col gap-2">
+              <span class="font-bold text-xl text-color">Statistic</span>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Ranking</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Collectibles</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Activity</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list flex flex-col gap-2">
+              <span class="font-bold text-xl text-color">Company</span>
+              <li>
+                <a href="#">
+                  <span class="mt-6">About Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Career</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Support</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Partners</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list flex flex-col gap-2">
+              <span class="font-bold text-xl text-color">Resources</span>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Help Center</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Platform Status</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="mt-6">Blog</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="mt-12">
+        <div class="flex justify-between mt-12 items-center text-color">
+          <p>
+            <a href="#">
+              <span>© Copyright 2023 - davixq</span>
+            </a>
+          </p>
+          <p class="flex gap-7">
+            <a href="#">
+              <span>Privacy Policy</span>
+            </a>
+            <a href="#">
+              <span>Terms & Conditions</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
